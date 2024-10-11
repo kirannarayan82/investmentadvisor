@@ -21,17 +21,13 @@ def run_app():
 
     # Input Fields
     salary = st.number_input("Enter your monthly salary (in $)", min_value=0)
-    time_horizon = st.number_input("Enter your investment time horizon
-(in years)", min_value=0)
+    time_horizon = st.number_input("Enter your investment time horizon (in years)", min_value=0)
     age = st.number_input("Enter your age", min_value=0)
-    risk_appetite = st.selectbox("Select your risk appetite", ['low',
-'medium', 'high'])
+    risk_appetite = st.selectbox("Select your risk appetite", ['low','medium', 'high'])
 
     if st.button("Get Investment Suggestions"):
-        allocation, monthly_investment = suggest_investment(salary,
-time_horizon, age, risk_appetite)
-        st.write("Based on your inputs, here are some investment
-suggestions for you:")
+        allocation, monthly_investment = suggest_investment(salary,time_horizon, age, risk_appetite)
+        st.write("Based on your inputs, here are some investment suggestions for you:")
 
         st.write("**Investment Allocation (%):**")
         for investment, percentage in allocation.items():
