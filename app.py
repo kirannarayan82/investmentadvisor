@@ -26,8 +26,6 @@ def suggest_investment(salary, time_horizon, age, risk_appetite, target_amount):
     return allocation, monthly_investment
 
 ## Streamlit App
-def run_app():
-    import suggest_investment
 
 st.title("Investment Planning App")
 
