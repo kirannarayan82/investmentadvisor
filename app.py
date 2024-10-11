@@ -50,3 +50,4 @@ if st.button("Get Investment Suggestions"):
     for investment, amount in monthly_investment.items():
         st.write(f"- {investment}: ${amount:.2f}")
 
+    st.write(f"This is an AI based app which just gives guidelines on investment. Please consult your investment advisor for accuracy and decisions")
