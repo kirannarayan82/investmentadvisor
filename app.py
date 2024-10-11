@@ -1,3 +1,4 @@
+import streamlit as st
 def suggest_investment(salary, time_horizon, age, risk_appetite):
     investments = {
         'low': {'Bonds': 50, 'Fixed Deposits': 30, 'Real Estate': 20},
