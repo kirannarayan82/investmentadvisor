@@ -28,6 +28,7 @@ def suggest_investment(salary, time_horizon, age, risk_appetite, target_amount):
 ## Streamlit App
 
 st.title("Investment Planning App")
+ st.write(f"This is an AI based app which just gives guidelines on investment. Please consult your investment advisor for accuracy and decisions")
 
 # Input Fields
 salary = st.number_input("Enter your monthly salary (in $)", min_value=0)
@@ -50,4 +51,4 @@ if st.button("Get Investment Suggestions"):
     for investment, amount in monthly_investment.items():
         st.write(f"- {investment}: ${amount:.2f}")
 
-    st.write(f"This is an AI based app which just gives guidelines on investment. Please consult your investment advisor for accuracy and decisions")
+   
