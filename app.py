@@ -49,6 +49,4 @@ if st.button("Get Investment Suggestions"):
     st.write("**Monthly Investment Amount ($):**")
     for investment, amount in monthly_investment.items():
         st.write(f"- {investment}: ${amount:.2f}")
-## Run Streamlit App
-if __name__ == "__main__":
-    run_app()
+
